@@ -1,0 +1,22 @@
+<% include ./partials/header %>
+<div class="container">
+    
+    <h1 class="text-center">Add your own location </h1>
+
+    <div class="form-layout">
+        <form action="/locations/<%= id %>/comment/new" method="POST">
+
+            <div class="form-group">
+                <input class="form-control" type="text" name="content" placeholder="content">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary">submit</button>
+            </div>
+            <a href="/locations/">Go Back</a>
+
+        </form>
+    </div>
+    
+
+</div>
+<% include ./partials/footer %>

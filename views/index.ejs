@@ -1,0 +1,40 @@
+<% include ./partials/header %>
+
+<div class="container">
+    <header class="container jumbotron">
+        <h1>Welcome to LuxLust</h1>
+        <h4> Here you cam find the most iconic 
+            locations in the world </h4>
+
+            <a class='btn btn-lg btn-success' href="/locations/new">Add location</a>
+    </header>
+
+    
+    <div class="row text-center home">
+    
+        <% locations.forEach(function(location){ %>
+            <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div class="index img-thumbnail">
+                    <img src= "<%= location.image %>" alt="image">
+
+                    <div class="caption">
+                         <h5> <%= location.name %> </h5>
+                     </div>
+                     
+                     <p>
+                        <a href="/locations/show/<%= location._id %>" 
+                               class=" text-center btn btn-primary btn-md">More info</a>
+                     </p>
+                    
+                </div>
+               </div>        
+        <% }) %>
+        
+    </div>
+    
+
+
+</div>
+
+<% include ./partials/footer %>
+

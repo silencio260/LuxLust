@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" media="screen" 
+    href="/css/bootstrap.css" />
+    
+    <link rel="stylesheet" type="text/css" media="screen" 
+    href="/css/main.css" />
+    
+</head>
+<body>
+  
+
+<!-- navbar section -->
+  <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">LuxLust</a>
+        </div>
+
+          <div class="" style="display: inline-block" >
+            <ul class="nav justify-content-center">
+              <% if(!currentUser){ %>
+                <li> <a class="nav-link" href="/login">Login</a></li>
+                <li> <a class="nav-link" href="/register">Sign Up</a></li>
+             <% } else{ %>
+              <li> <a class="nav-link" href="#">Signed in as <%= currentUser.username %> </a></li>
+              <li> <a class="nav-link" href="/logout">Logout</a></li>
+             <% } %>
+              
+            </ul>
+          </div>
+      </div>
+  </nav>
+  
+  <div class="container text-center">
+
+    <% if(error && error.length > 0){ %>
+    <div class="alert alert-danger" role="alert">
+      <%=error %> 
+    </div>
+    <% } %>
+
+    
+    <% if(success && success.length > 0){ %>
+      <div class="alert alert-success" role="alert">
+        <%=success %> 
+      </div>
+      <% } %>
+
+  </div>
+
+  

@@ -1,0 +1,61 @@
+
+html, body {
+    margin: none;
+    /* background-color: floralwhite; */
+}
+
+
+h4 {
+    color: firebrick;
+}
+
+.ruk-spacing{
+
+    margin: 2%;
+}
+
+.ruk-well{
+
+    background-color: rgb(218, 216, 216);;
+    border-radius: 2%;
+    border: 2px solid #C5D2D0;
+
+}
+
+/* image style */
+.index{
+
+    margin: 10px;
+    padding: 0;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 2%;
+}
+
+.index img {
+    
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: 200px;
+    border-radius: 2%;
+    float: left;
+    /* padding-bottom: 5px; */
+    /* margin: 10px; */
+}
+
+.index h4{
+    margin:20px;
+}
+
+.img-thumbnail img{
+    width: 100%;
+    /* height: 800px; */
+}
+
+.img-thumbnail{
+    padding: 0;
+
+}
+
+

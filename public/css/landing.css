@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+}
+
+#landing-header{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+
+}
+
+#landing-header h1{
+    color: #fff;
+
+}
+
+.slide-show{
+    position: fixed;
+    widows: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.slide-show li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite;
+    background-image: url('/pics/dragon.jpg')
+
+
+}
+
+/* .slide-show li:nth-child(1){
+    background-image: url('/pics/dragon.jpg');
+}
+
+.slide-show li:nth-child(2){
+    background-image: url('/public/pics/dragon2.jpg');
+    animation-delay: 10s
+}
+
+.slide-show li:nth-child(3){
+    background-image: url('/public/pics/dragon3.jpg');
+    animation-delay: 20s
+}
+
+.slide-show li:nth-child(4){
+    background-image: url('/public/pics/dragon4.jpg');
+    animation-delay: 30s
+}
+
+.slide-show li:nth-child(5){
+    background-image: url('/public/pics/dragon5.jpg');
+    animation-delay: 40s
+}
+
+@keyframes imageAnimation{
+    0%{
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    10%{
+        opacity: 1;
+        animation-timing-function: ease-out
+    }
+    20%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 0;
+    }
+
+} */
+
+
+
+
+
+
+
+
+
+
+
